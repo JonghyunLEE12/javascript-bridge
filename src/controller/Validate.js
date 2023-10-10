@@ -1,6 +1,8 @@
+const { ERROR_MSG } = require('../model/Constants') 
+
 class Validate {
     checkBridgeLength = (number) => {
-        if (isNaN(parseInt(number))) throw new Error("[ERROR]숫자로 입력해주세요.");
+        if (isNaN(parseInt(number)) === true) throw new Error(ERROR_MSG.NOT_NUMBER);
         if (parseInt(number) <= 2 || parseInt(number) >= 21) throw new Error("[ERROR] 다리 길이는 3부터 20 사이의 숫자여야 합니다.");
     }
 

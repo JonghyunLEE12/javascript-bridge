@@ -16,8 +16,8 @@ const NAMES = {
     BRIDGE_STATUS : [[],[]],
 }
 
-// const BRIDGE_STATUS = [
-//     [],[]
-// ]
+const ERROR_MSG = {
+    NOT_NUMBER : '[ERROR] 숫자로 입력해주세요.'
+}
 
-module.exports = { MSGS, NAMES }
+module.exports = { MSGS, NAMES , ERROR_MSG }

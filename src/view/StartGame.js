@@ -5,10 +5,12 @@ const BridgeMaker = require('../BridgeMaker');
 const MissionUtils = require('@woowacourse/mission-utils');
 const RandomNumber = require('../BridgeRandomNumberGenerator');
 const Controller = require('../controller/Controller');
+const BridgeGame = require('../BridgeGame');
 
 class StartGame {
     constructor() {
         this.CON = new Controller();
+        // this.CON = new BridgeGame();
         this.startGame();
         this.getBridgeLength();
         this.getMove();
